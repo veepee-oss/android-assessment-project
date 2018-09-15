@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">favorites</string>
+    <string name="activity_label">Favorites</string>
+</resources>

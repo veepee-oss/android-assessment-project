@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">detail</string>
+    <string name="title">Title: %s</string>
+    <string name="year">Year: %s</string>
+    <string name="director">Director: %s</string>
+    <string name="runtime">Runtime: %s</string>
+    <string name="loading_error">Loading error</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vp.favorites">
+
+    <application>
+        <activity android:name=".FavoriteActivity"
+            android:label="@string/activity_label">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="movies"
+                    android:pathPrefix="/favorites"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

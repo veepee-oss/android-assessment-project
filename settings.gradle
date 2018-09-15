@@ -1,0 +1,1 @@
+include ':app', ':features:list', ':features:favorites', ':dagger.addons', 'features:detail'
