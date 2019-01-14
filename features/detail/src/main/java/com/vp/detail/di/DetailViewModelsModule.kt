@@ -1,7 +1,7 @@
 package com.vp.detail.di
 
-import android.arch.lifecycle.ViewModel
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.vp.daggeraddons.DaggerViewModelFactory
 import com.vp.daggeraddons.ViewModelKey
 import com.vp.detail.viewmodel.DetailsViewModel

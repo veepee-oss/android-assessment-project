@@ -5,5 +5,6 @@
     <item
         android:id="@+id/star"
         android:icon="@drawable/ic_star"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:title="@string/favorite" />
 </menu>

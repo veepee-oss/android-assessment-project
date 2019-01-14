@@ -44,13 +44,13 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger"
 
     //architecture components
-    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycle"
 
     //support library
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayout"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.supportLibraryVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayout"
+    implementation "com.google.android.material:material:$rootProject.supportLibraryVersion"
 
     //api
     api "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
@@ -61,7 +61,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation "org.mockito:mockito-core:2.21.0"
     testImplementation "com.squareup.retrofit2:retrofit-mock:$rootProject.retrofit"
-    testImplementation "android.arch.core:core-testing:$rootProject.lifecycle"
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    testImplementation 'androidx.arch.core:core-testing:2.0.0'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
