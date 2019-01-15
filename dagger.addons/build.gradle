@@ -10,7 +10,7 @@ android {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -30,10 +30,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin"
 
     //architecture components
-    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycle"
 
     //support
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
 
     //dagger
     implementation "com.google.dagger:dagger:$rootProject.dagger"
@@ -43,6 +43,6 @@ dependencies {
     kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger"
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }
