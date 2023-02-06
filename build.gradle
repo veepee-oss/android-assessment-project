@@ -2,27 +2,32 @@
 
 buildscript {
     ext {
-        androidPluginVersion = '3.2.1'
+        androidPluginVersion = '7.4.1'
         //sdk and tools
-        compileSdkVersion = 28
+        compileSdkVersion = 33
         minSdkVersion = 21
-        targetSdkVersion = 28
+        targetSdkVersion = 33
 
         //dependencies
-        kotlin = '1.2.60'
-        supportLibraryVersion = '1.0.0'
-        constraintLayout = '1.1.2'
-        retrofit = '2.4.0'
-        lifecycle = '2.0.0'
-        gson = '2.8.2'
-        dagger = '2.16'
-        glide = '4.8.0'
-        okhttp = '3.10.0'
+        kotlin = '1.8.0'
+        supportLibraryVersion = '1.6.1'
+        recyclerView = '1.2.1'
+        constraintLayout = '2.1.4'
+        retrofit = '2.9.0'
+        lifecycle = '2.2.0'
+        gson = '2.10.1'
+        dagger = '2.44.2'
+        glide = '4.10.0'
+        okhttp = '4.10.0'
     }
 
     repositories {
         google()
-        jcenter()
+        gradlePluginPortal()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$androidPluginVersion"
@@ -36,7 +41,11 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        gradlePluginPortal()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
 }
 

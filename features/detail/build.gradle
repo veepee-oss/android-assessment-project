@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
+    namespace 'com.vp.detail'
 
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
@@ -14,8 +14,10 @@ android {
 
     }
 
-    dataBinding {
-        enabled = true
+    buildFeatures{
+        dataBinding {
+            enabled = true
+        }
     }
 
     buildTypes {
@@ -38,7 +40,7 @@ dependencies {
     implementation project(':dagger.addons')
     implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayout"
-    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.2.60'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.8.0'
 
     //glide
     implementation "com.github.bumptech.glide:glide:$rootProject.glide"
@@ -58,7 +60,7 @@ dependencies {
     implementation("com.google.dagger:dagger-android-support:$rootProject.dagger")
     kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger"
 
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

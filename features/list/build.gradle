@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
+    namespace 'com.vp.list'
 
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
@@ -31,7 +31,7 @@ android {
 
 dependencies {
     implementation project(':dagger.addons')
-    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.2.60'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.8.0'
     //glide
     implementation "com.github.bumptech.glide:glide:$rootProject.glide"
     kapt "com.github.bumptech.glide:compiler:$rootProject.glide"
@@ -48,7 +48,7 @@ dependencies {
 
     //support library
     implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
-    implementation "androidx.recyclerview:recyclerview:$rootProject.supportLibraryVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerView"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayout"
     implementation "com.google.android.material:material:$rootProject.supportLibraryVersion"
 
@@ -57,11 +57,11 @@ dependencies {
     implementation "com.google.code.gson:gson:$rootProject.gson"
 
     //test
-    testImplementation "org.assertj:assertj-core:3.11.1"
-    testImplementation 'junit:junit:4.12'
-    testImplementation "org.mockito:mockito-core:2.21.0"
+    testImplementation "org.assertj:assertj-core:3.24.2"
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "org.mockito:mockito-core:4.11.0"
     testImplementation "com.squareup.retrofit2:retrofit-mock:$rootProject.retrofit"
-    testImplementation 'androidx.arch.core:core-testing:2.0.0'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

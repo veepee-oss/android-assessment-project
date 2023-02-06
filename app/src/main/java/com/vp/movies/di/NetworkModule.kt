@@ -35,7 +35,7 @@ class NetworkModule {
     @Named("apiKeyInterceptor")
     fun providesApiKeyInterceptor(): Interceptor = Interceptor {
         val original = it.request()
-        val originalHttpUrl = original.url()
+        val originalHttpUrl = original.url
 
         val url = originalHttpUrl.newBuilder()
                 .addQueryParameter("apiKey", BuildConfig.API_KEY)

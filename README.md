@@ -23,7 +23,7 @@ We left `favorites` module empty to let you make choice of language.
 
 ### Technologies
 * Architecture - MVVM with [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/)
-* Programming languages - Java 8, Kotlin 1.2.60
+* Programming languages - Java 8, Kotlin 1.8.0
 * Dependency injection - [Dagger 2](https://github.com/google/dagger)
 * Images loading - [Glide](https://github.com/bumptech/glide)
 * HTTP client - [Retrofit](https://square.github.io/retrofit/)
@@ -47,3 +47,6 @@ You cracked all of those challenges, and you still can't get enough. We've got y
 2. Java to Kotlin conversion - convert `list` module from Java to Kotlin.
 3. List loading indicator - The app loads gradually the list of movies. Add a progress bar to indicate that the next page is loading.
 
+### How to send a solution
+
+You can upload your solution to GitHub, BitBucket or any other online repository, and share it with us. You can also send us a .zip file - just remember to clean the project before you zip it.
